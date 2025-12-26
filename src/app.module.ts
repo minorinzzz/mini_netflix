@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { SeriesModule } from './series/series.module';
+import { EpisodiosModule } from './episodios/episodios.module';
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import { SeriesModule } from './series/series.module';
       }),
     }),
     SeriesModule,
+    EpisodiosModule,
   ],
   controllers: [],
   providers: [],
