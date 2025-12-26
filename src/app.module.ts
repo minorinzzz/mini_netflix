@@ -3,6 +3,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { SeriesModule } from './series/series.module';
 import { EpisodiosModule } from './episodios/episodios.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -25,6 +26,7 @@ import { EpisodiosModule } from './episodios/episodios.module';
     }),
     SeriesModule,
     EpisodiosModule,
+    AuthModule,
   ],
   controllers: [],
   providers: [],
