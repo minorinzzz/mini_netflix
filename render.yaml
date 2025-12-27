@@ -41,5 +41,5 @@ services:
     name: mini-netflix-db
     env: postgres
     plan: free
-    databaseName: mini_netflix
-    databaseUser: mininetflix
+    databaseName: mini_netflix_db_y9kb
+    databaseUser: mini_netflix_db_y9kb_user
